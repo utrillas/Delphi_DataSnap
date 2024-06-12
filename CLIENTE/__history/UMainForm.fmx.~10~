@@ -1,0 +1,111 @@
+object frmCliente: TfrmCliente
+  Left = 0
+  Top = 0
+  Caption = 'DataSnapCliente'
+  ClientHeight = 338
+  ClientWidth = 317
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 0
+  object lblTemperatura: TLabel
+    StyledSettings = [Family]
+    Position.X = 24.000000000000000000
+    Position.Y = 122.000000000000000000
+    Size.Width = 153.000000000000000000
+    Size.Height = 32.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.Font.Size = 22.000000000000000000
+    TextSettings.Font.StyleExt = {00070000000000000004000000}
+    TextSettings.FontColor = claBlue
+    Text = 'Temperatura'
+    TabOrder = 3
+  end
+  object lblVariable: TLabel
+    StyledSettings = [Family]
+    Position.X = -4.000000000000000000
+    Position.Y = 31.000000000000000000
+    Size.Width = 321.000000000000000000
+    Size.Height = 50.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.Font.Size = 48.000000000000000000
+    TextSettings.Font.StyleExt = {00070000000000000004000000}
+    TextSettings.FontColor = claBlueviolet
+    TextSettings.HorzAlign = Center
+    Text = 'VARIABLES'
+    TabOrder = 2
+  end
+  object lblNivel: TLabel
+    StyledSettings = [Family]
+    Position.X = 24.000000000000000000
+    Position.Y = 212.000000000000000000
+    Size.Width = 137.000000000000000000
+    Size.Height = 25.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.Font.Size = 22.000000000000000000
+    TextSettings.Font.StyleExt = {00070000000000000004000000}
+    TextSettings.FontColor = claBlue
+    Text = 'Nivel'
+    TabOrder = 1
+  end
+  object lblPresion: TLabel
+    StyledSettings = [Family]
+    Position.X = 24.000000000000000000
+    Position.Y = 162.000000000000000000
+    Size.Width = 137.000000000000000000
+    Size.Height = 32.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.Font.Size = 22.000000000000000000
+    TextSettings.Font.StyleExt = {00070000000000000004000000}
+    TextSettings.FontColor = claBlue
+    Text = 'Presion'
+    TabOrder = 0
+  end
+  object txtTemperatura: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 6
+    Position.X = 169.000000000000000000
+    Position.Y = 132.000000000000000000
+  end
+  object txtPresion: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 5
+    Position.X = 169.000000000000000000
+    Position.Y = 172.000000000000000000
+  end
+  object txtNivel: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 4
+    Position.X = 169.000000000000000000
+    Position.Y = 215.000000000000000000
+  end
+  object btnMostrar: TButton
+    Position.X = 24.000000000000000000
+    Position.Y = 272.000000000000000000
+    Size.Width = 245.000000000000000000
+    Size.Height = 33.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 7
+    Text = 'MOSTRAR'
+    OnClick = btnMostrarClick
+  end
+  object SQLConnection1: TSQLConnection
+    DriverName = 'DataSnap'
+    Params.Strings = (
+      'DriverUnit=Data.DBXDataSnap'
+      'HostName=192.168.120.185'
+      'Port=211'
+      'CommunicationProtocol=tcp/ip'
+      'DSAuthenticationuser=root'
+      'DSAuthenticationpassword=root'
+      'DatasnapContext=datasnap/'
+      
+        'DriverAssemblyLoader=Borland.Data.TDBXClientDriverLoader,Borland' +
+        '.Data.DbxClientDriver,Version=24.0.0.0,Culture=neutral,PublicKey' +
+        'Token=91d62ebb5b0d1b1b')
+    Connected = True
+    Left = 240
+    Top = 8
+    UniqueId = '{B3058107-0E6E-4A4D-BC61-AAEF78E3C21C}'
+  end
+end

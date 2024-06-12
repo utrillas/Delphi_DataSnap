@@ -1,0 +1,14 @@
+program DataSnapCliente;
+
+uses
+  System.StartUpCopy,
+  FMX.Forms,
+  UMainForm in 'UMainForm.pas' {frmCliente};
+
+{$R *.res}
+
+begin
+  Application.Initialize;
+  Application.CreateForm(TfrmCliente, frmCliente);
+  Application.Run;
+end.

@@ -1,0 +1,60 @@
+unit UMainForm;
+
+interface
+
+uses Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants,
+  System.Classes, FMX.Graphics, FMX.Controls, FMX.Forms, FMX.Dialogs,
+  FMX.StdCtrls, FMX.Types, FMX.Controls.Presentation;
+
+type
+  TForm1 = class(TForm)
+    lblTitulo: TLabel;
+    btnApagar: TButton;
+    btnEncender: TButton;
+    Switch1: TSwitch;
+    procedure btnApagarClick(Sender: TObject);
+    procedure btnEncenderClick(Sender: TObject);
+    procedure Switch1Switch(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  Form1: TForm1;
+
+implementation
+
+{$R *.fmx}
+
+uses ServerContainerUnit1;
+
+procedure TForm1.btnApagarClick(Sender: TObject);
+begin
+  ServerContainer1.DSServer1.Stop;
+  lblTitulo.Text:= 'APAGADO';
+end;
+
+procedure TForm1.btnEncenderClick(Sender: TObject);
+begin
+    ServerContainer1.DSServer1.Start;
+    lblTitulo.Text:= 'ENCENDIDO';
+end;
+
+procedure TForm1.Switch1Switch(Sender: TObject);
+begin
+  if switch1.IsChecked = True then
+    begin
+        ServerContainer1.DSServer1.Start;
+        lblTitulo.Text:= 'ENCENDIDO';
+    end;
+  if switch1.IsChecked = False then
+    begin
+        ServerContainer1.DSServer1.Stop;
+        lblTitulo.Text:= 'APAGADO';
+    end;
+end;
+
+end.
+

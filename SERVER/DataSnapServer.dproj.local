@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2024/06/06 12:59:31.000.943,=C:\Users\francisco.corcoles\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2024/06/06 12:59:32.000.432,=C:\Users\francisco.corcoles\Documents\Embarcadero\Studio\Projects\ServerContainerUnit1.pas</Transaction>
+    <Transaction>2024/06/06 12:59:32.000.195,=C:\Users\francisco.corcoles\Documents\Embarcadero\Studio\Projects\ServerMethodsUnit1.pas</Transaction>
+    <Transaction>2024/06/06 13:00:06.000.607,C:\Users\francisco.corcoles\Documents\Embarcadero\Studio\Projects\Project1.dproj=C:\Users\francisco.corcoles\Documents\Embarcadero\Studio\Projects\DataSnapServer.dproj</Transaction>
+    <Transaction>2024/06/06 13:00:20.000.665,C:\Users\francisco.corcoles\Documents\Embarcadero\Studio\Projects\Unit1.pas=C:\Users\francisco.corcoles\Documents\Embarcadero\Studio\Projects\UMainForm.pas</Transaction>
+    <Transaction>2024/06/06 13:00:20.000.665,C:\Users\francisco.corcoles\Documents\Embarcadero\Studio\Projects\Unit1.fmx=C:\Users\francisco.corcoles\Documents\Embarcadero\Studio\Projects\UMainForm.fmx</Transaction>
+    <Transaction>2024/06/06 13:00:57.000.713,C:\Users\francisco.corcoles\Documents\Embarcadero\Studio\Projects\UMainForm.pas=C:\Users\francisco.corcoles\Desktop\Carmen\DataSanp\SERVER\UMainForm.pas</Transaction>
+    <Transaction>2024/06/06 13:00:57.000.713,C:\Users\francisco.corcoles\Documents\Embarcadero\Studio\Projects\UMainForm.fmx=C:\Users\francisco.corcoles\Desktop\Carmen\DataSanp\SERVER\UMainForm.fmx</Transaction>
+    <Transaction>2024/06/06 13:01:03.000.241,C:\Users\francisco.corcoles\Documents\Embarcadero\Studio\Projects\ServerContainerUnit1.pas=C:\Users\francisco.corcoles\Desktop\Carmen\DataSanp\SERVER\ServerContainerUnit1.pas</Transaction>
+    <Transaction>2024/06/06 13:01:03.000.241,C:\Users\francisco.corcoles\Documents\Embarcadero\Studio\Projects\ServerContainerUnit1.dfm=C:\Users\francisco.corcoles\Desktop\Carmen\DataSanp\SERVER\ServerContainerUnit1.dfm</Transaction>
+    <Transaction>2024/06/06 13:01:06.000.551,C:\Users\francisco.corcoles\Documents\Embarcadero\Studio\Projects\ServerMethodsUnit1.dfm=C:\Users\francisco.corcoles\Desktop\Carmen\DataSanp\SERVER\ServerMethodsUnit1.dfm</Transaction>
+    <Transaction>2024/06/06 13:01:06.000.551,C:\Users\francisco.corcoles\Documents\Embarcadero\Studio\Projects\ServerMethodsUnit1.pas=C:\Users\francisco.corcoles\Desktop\Carmen\DataSanp\SERVER\ServerMethodsUnit1.pas</Transaction>
+    <Transaction>2024/06/06 13:01:12.000.921,C:\Users\francisco.corcoles\Documents\Embarcadero\Studio\Projects\DataSnapServer.dproj=C:\Users\francisco.corcoles\Desktop\Carmen\DataSanp\SERVER\DataSnapServer.dproj</Transaction>
+  </Transactions>
+</BorlandProject>

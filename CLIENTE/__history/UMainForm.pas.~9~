@@ -1,0 +1,49 @@
+unit UMainForm;
+
+interface
+
+uses
+  System.SysUtils, System.Types, System.UITypes, System.Classes, System.Variants,
+  FMX.Types, FMX.Controls, FMX.Forms, FMX.Graphics, FMX.Dialogs, FMX.StdCtrls,
+  FMX.Controls.Presentation, FMX.Edit, Data.DBXDataSnap, Data.DBXCommon,
+  IPPeerClient, Data.DB, Data.SqlExpr;
+
+type
+  TfrmCliente = class(TForm)
+    lblTemperatura: TLabel;
+    lblVariable: TLabel;
+    lblNivel: TLabel;
+    lblPresion: TLabel;
+    txtTemperatura: TEdit;
+    txtPresion: TEdit;
+    txtNivel: TEdit;
+    btnMostrar: TButton;
+    SQLConnection1: TSQLConnection;
+    procedure btnMostrarClick(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  frmCliente: TfrmCliente;
+
+implementation
+
+{$R *.fmx}
+
+
+
+procedure TfrmCliente.btnMostrarClick(Sender: TObject);
+var
+  ser: TServerMethods1Client;
+  nivel, temperatura, presion: Double;
+begin
+  ser:= TServerMethods1Client.Create(SQLConnection1.DBXConnection);
+  ser.getVariables(temperatura, presion, nivel_);
+  txtTemperatura:= temperatura.ToString;
+
+end;
+
+end.
